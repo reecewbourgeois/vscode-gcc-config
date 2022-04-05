@@ -1,0 +1,89 @@
+{
+  // See https://go.microsoft.com/fwlink/?LinkId=733558
+  // for the documentation about the tasks.json format
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "type": "cppbuild",
+      "label": "GCC C++20 Debuggable",
+      "command": "C:/msys64/mingw64/bin/gcc.exe",
+      "args": [
+        "-fdiagnostics-color=always",
+        "-g",
+        "${workspaceFolder}\\*.cpp",
+        "-o",
+        "${fileDirname}\\${fileBasenameNoExtension}.exe",
+        "-lstdc++",
+        "-Wall",
+        "-Wextra",
+        "-Wshadow",
+        "-Wnon-virtual-dtor",
+        "-Wold-style-cast",
+        "-Wcast-align",
+        "-Wunused",
+        "-Woverloaded-virtual",
+        "-Wpedantic",
+        "-Wconversion",
+        "-Wsign-conversion",
+        "-Wmisleading-indentation",
+        "-Wduplicated-cond",
+        "-Wduplicated-branches",
+        "-Wlogical-op",
+        "-Wnull-dereference",
+        "-Wuseless-cast",
+        "-Wdouble-promotion",
+        "-Wformat=2"
+      ],
+      "options": {
+        "cwd": "C:/msys64/mingw64/bin"
+      },
+      "problemMatcher": ["$gcc"],
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      },
+      "detail": "compiler: C:/msys64/mingw64/bin/gcc.exe"
+    },
+    {
+      "type": "cppbuild",
+      "label": "GCC C++20 Production",
+      "command": "C:/msys64/mingw64/bin/gcc.exe",
+      "args": [
+        "-fdiagnostics-color=always",
+        "${workspaceFolder}\\*.cpp",
+        "-o",
+        "${fileDirname}\\${fileBasenameNoExtension}.exe",
+        "-lstdc++",
+        "-Wall",
+        "-Wextra",
+        "-Wshadow",
+        "-Wnon-virtual-dtor",
+        "-Wold-style-cast",
+        "-Wcast-align",
+        "-Wunused",
+        "-Woverloaded-virtual",
+        "-Wpedantic",
+        "-Wconversion",
+        "-Wsign-conversion",
+        "-Wmisleading-indentation",
+        "-Wduplicated-cond",
+        "-Wduplicated-branches",
+        "-Wlogical-op",
+        "-Wnull-dereference",
+        "-Wuseless-cast",
+        "-Wdouble-promotion",
+        "-Wformat=2",
+        "-O3"
+      ],
+      "options": {
+        "cwd": "C:/msys64/mingw64/bin"
+      },
+      "problemMatcher": ["$gcc"],
+      "group": {
+        "kind": "build",
+        "isDefault": false
+      },
+      "detail": "compiler: C:/msys64/mingw64/bin/gcc.exe"
+    }
+  ]
+}
